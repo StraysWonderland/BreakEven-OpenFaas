@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  break-even-kotlin:
+    lang: kotlin-maven-mn
+    handler: ./break-even-kotlin
+    image: straywonderland/break-even-kotlin:latest
+
